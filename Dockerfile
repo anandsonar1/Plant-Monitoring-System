@@ -25,11 +25,11 @@
 
 
 FROM python:slim-buster
-WORKDIR /Flaskfinal_lt 
+WORKDIR /Flaskfinal_Update 
 RUN pip install --upgrade pip
 COPY requirements.txt requirements.txt
 RUN pip install wheel  
 RUN pip install -r requirements.txt
-COPY . /Flaskfinal_lt
+COPY . /Flaskfinal_Update
 ENTRYPOINT [ "python" ]
 CMD [  "run.py" ]
